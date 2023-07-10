@@ -32,12 +32,5 @@ class PostTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configure(with model: FacebookPost)
-    {
-        self.likesLabel.text = "\(model.numberOfLikes)"
-        self.usernameLabel.text = model.username
-        self.userImageView.image = UIImage(named: model.userImagename)
-        self.userImageView.image = UIImage(named: model.userImagename)
-        self.postImageView.image = UIImage(named: model.postImagename)
-    }
+    
 }

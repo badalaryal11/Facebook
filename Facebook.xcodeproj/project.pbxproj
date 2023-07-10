@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581E1B2E2A5C225D0060CB7D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581E1B2D2A5C225D0060CB7D /* FeedTableViewController.swift */; };
 		58D0BECC2A59CEAF00A96410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0BECB2A59CEAF00A96410 /* AppDelegate.swift */; };
 		58D0BECE2A59CEAF00A96410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0BECD2A59CEAF00A96410 /* SceneDelegate.swift */; };
 		58D0BED02A59CEAF00A96410 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0BECF2A59CEAF00A96410 /* FeedController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		581E1B2D2A5C225D0060CB7D /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		58D0BEC82A59CEAF00A96410 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D0BECB2A59CEAF00A96410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D0BECD2A59CEAF00A96410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				58D0BED62A59CEB300A96410 /* LaunchScreen.storyboard */,
 				58D0BED92A59CEB300A96410 /* Info.plist */,
 				58D0BEDF2A59EFA900A96410 /* PostTableViewCell.swift */,
+				581E1B2D2A5C225D0060CB7D /* FeedTableViewController.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				58D0BED02A59CEAF00A96410 /* FeedController.swift in Sources */,
 				58D0BECC2A59CEAF00A96410 /* AppDelegate.swift in Sources */,
 				58D0BECE2A59CEAF00A96410 /* SceneDelegate.swift in Sources */,
+				581E1B2E2A5C225D0060CB7D /* FeedTableViewController.swift in Sources */,
 				58D0BEE02A59EFAA00A96410 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

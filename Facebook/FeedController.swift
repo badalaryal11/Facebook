@@ -7,45 +7,29 @@
 
 import UIKit
 
-class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedController: UIViewController{
     
-    @IBOutlet var table : UITableView!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.delegate = self
-        table.dataSource = self
-        title = "Facebook Dashboard"
+        
+        title = "News Feed"
         self.navigationController?.navigationBar.backgroundColor = .blue
         navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15),
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20),
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
         // Do any additional setup after loading the view.
         
         
-    
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
         
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return posts.count
     }
     
     
-    struct FacebookPost{
-        let numberOfLikes:Int
-        let username:String
-        let userImagename:String
-        let postImagename:String
-    }
+    
+    
+    
     
     
 }

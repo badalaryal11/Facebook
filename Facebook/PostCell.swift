@@ -28,7 +28,7 @@ class PostCell: UITableViewCell
                 timeAgoLabel.text = post.timeAgo
                 captionLabel.text = post.Caption
                 postImageView.image = post.image
-                postStatsLabel.text = "\(post.noOfLikes!) Likes   \(post.noOfComments!) Comments     \(post.noOfShares!) Shares"
+                postStatsLabel.text = "\(post.numberOfLikes!) Likes   \(post.numberOfComments!) Comments     \(post.numberOfShares!) Shares"
             }
         }
     

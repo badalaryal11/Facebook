@@ -9,15 +9,16 @@ import UIKit
 
 class NewsFeedTableViewController: UITableViewController
 {
-    
+   
     var posts: [Post]?
     override func viewDidLoad() {
         super.viewDidLoad()
+    title = "News Feed"
         fetchPosts()
     }
     func fetchPosts(){
         posts = Post.fetchPosts()
-        tableview.reloadData()
+       // tableView.reloadData()
     }
 }
     

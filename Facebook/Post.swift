@@ -11,9 +11,9 @@ struct Post {
     var timeAgo: String?
     var Caption: String?
     var image: UIImage?
-    var noOfLikes: Int?
-    var noOfComments: Int?
-    var noOfShares: Int?
+    var numberOfLikes: Int?
+    var numberOfComments: Int?
+    var numberOfShares: Int?
     
     
 
@@ -21,10 +21,10 @@ struct Post {
 {
     var posts = [Post]()
     let zuck = User(username: "Mark Zuckerberg",profileImage: UIImage(named: "mark"))
-    let post1 =  Post(createdBy: zuck, timeAgo: "5 hrs", Caption: " The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.- [ ] The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.", noOfLikes: 134, noOfComments: 145, noOfShares: 147)
+    let post1 =  Post(createdBy: zuck, timeAgo: "5 hrs", Caption: " The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.- [ ] The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.",image: UIImage(named: "Ankara"), numberOfLikes: 134, numberOfComments: 145, numberOfShares: 147)
     
     let badal = User(username: "Badal Aryal",profileImage: UIImage(named: "badal"))
-    let post2 =  Post(createdBy: badal, timeAgo: "11 hrs", Caption: " The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.- [ ] The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.", noOfLikes: 11, noOfComments: 14, noOfShares: 23)
+    let post2 =  Post(createdBy: badal, timeAgo: "11 hrs", Caption: " The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.- [ ] The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity. The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity The essential struggles of humanity is the harnessing the power of technology for the betterment of humanity.", image: UIImage(named: "Antalya"), numberOfLikes: 11, numberOfComments: 14, numberOfShares: 23)
     
     posts.append(post1)
     posts.append(post2)

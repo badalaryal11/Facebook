@@ -18,7 +18,7 @@ class PostCell: UITableViewCell
         var post: Post!
         {
             didSet{
-                updateUI(){
+                updateUI()
                     
                 }
             }
@@ -26,10 +26,10 @@ class PostCell: UITableViewCell
                 profileImageView.image = post.createdBy.profileImage
                 usernameLabel.text = post.createdBy.username
                 timeAgoLabel.text = post.timeAgo
-                captionLabel.text = post.image
+                captionLabel.text = post.Caption
                 postImageView.image = post.image
-                postStatsLabel.text = "\(post.numberOfLikes!) Likes   \(post.numberOfComments!) Comments     \(post.numberOfShares!) Shares"
+                postStatsLabel.text = "\(post.noOfLikes!) Likes   \(post.noOfComments!) Comments     \(post.noOfShares!) Shares"
             }
         }
-    }
+    
 

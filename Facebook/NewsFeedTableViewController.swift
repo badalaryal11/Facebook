@@ -13,13 +13,13 @@ class NewsFeedTableViewController: UITableViewController
     var posts: [Post]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchPosts()
     }
-        func fetchPosts(){
-            posts = PostfetchPosts()
-            tableview.reloadData()
-        }
+    func fetchPosts(){
+        posts = Post.fetchPosts()
+        tableview.reloadData()
+    }
+}
     
     extension NewsFeedTableViewController {
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,4 +37,4 @@ class NewsFeedTableViewController: UITableViewController
         }
         
     }
-}
+

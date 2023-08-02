@@ -61,7 +61,6 @@
                                             <rect key="frame" x="0.0" y="150" width="393" height="400"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="400" id="Fpe-Jz-vVw"/>
-                                                <constraint firstAttribute="width" secondItem="F8h-84-XNg" secondAttribute="height" multiplier="393:400" id="cj6-EM-wmz"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Likes    200 Comments     300 Shares" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0q-ia-97K">
@@ -81,10 +80,10 @@
                                             </constraints>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-lN-0FG">
-                                            <rect key="frame" x="25" y="592.33333333333337" width="400" height="44.333333333333371"/>
+                                            <rect key="frame" x="0.0" y="592.33333333333337" width="393" height="50"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-S2-QdC">
-                                                    <rect key="frame" x="0.0" y="5" width="91" height="34.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="8" width="98.666666666666671" height="34.333333333333336"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Like">
                                                         <imageReference key="image" image="hand.thumbsup" catalog="system" renderingMode="original"/>
@@ -95,7 +94,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2d-pa-pti">
-                                                    <rect key="frame" x="98" y="5" width="130" height="34.333333333333336"/>
+                                                    <rect key="frame" x="105.66666666666667" y="8" width="181.66666666666663" height="34.333333333333336"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="l30-rg-YvJ"/>
                                                     </constraints>
@@ -106,10 +105,7 @@
                                                     </buttonConfiguration>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-Hn-A3U">
-                                                    <rect key="frame" x="235" y="5" width="165" height="34.333333333333336"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="pkt-vK-01Y"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="294.33333333333331" y="8" width="98.666666666666686" height="34.333333333333336"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Share">
                                                         <imageReference key="image" image="shuffle" catalog="system" renderingMode="template"/>
@@ -118,15 +114,14 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="M2d-pa-pti" firstAttribute="top" secondItem="SPD-lN-0FG" secondAttribute="top" constant="5" id="JpO-ZP-SV4"/>
-                                                <constraint firstAttribute="bottom" secondItem="M2d-pa-pti" secondAttribute="bottom" constant="5" id="Tol-LU-vXA"/>
-                                                <constraint firstItem="1yb-Hn-A3U" firstAttribute="leading" secondItem="M2d-pa-pti" secondAttribute="trailing" constant="7" id="Xzt-F3-7f0"/>
-                                                <constraint firstItem="M2d-pa-pti" firstAttribute="leading" secondItem="7Uj-S2-QdC" secondAttribute="trailing" constant="7" id="jwx-6j-OmB"/>
+                                                <constraint firstItem="M2d-pa-pti" firstAttribute="centerY" secondItem="SPD-lN-0FG" secondAttribute="centerY" id="A03-pM-3Bs"/>
+                                                <constraint firstItem="M2d-pa-pti" firstAttribute="centerX" secondItem="SPD-lN-0FG" secondAttribute="centerX" id="cGh-LA-VIr"/>
+                                                <constraint firstAttribute="height" constant="50" id="iVp-tg-LuK"/>
                                                 <constraint firstAttribute="width" constant="400" id="q6Y-Ld-Z6h"/>
                                             </constraints>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8C-xc-Gxd">
-                                            <rect key="frame" x="0.0" y="641.66666666666663" width="393" height="1"/>
+                                            <rect key="frame" x="0.0" y="647.33333333333337" width="393" height="1"/>
                                             <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="ouc-uN-c7W"/>
@@ -138,6 +133,7 @@
                                         <constraint firstItem="d1l-xr-jWN" firstAttribute="centerY" secondItem="94P-zE-bV0" secondAttribute="centerY" id="1Hv-Je-Myk"/>
                                         <constraint firstItem="yoV-Gh-7cV" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leading" constant="17" id="1Vk-rx-g5n"/>
                                         <constraint firstItem="94P-zE-bV0" firstAttribute="top" secondItem="03J-Jc-zRv" secondAttribute="bottom" constant="4" id="6Fa-y7-lvq"/>
+                                        <constraint firstItem="SPD-lN-0FG" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leading" id="GIJ-hR-8ap"/>
                                         <constraint firstItem="s5E-94-TeD" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leading" constant="12" id="J9h-mm-GUh"/>
                                         <constraint firstAttribute="trailing" secondItem="s5E-94-TeD" secondAttribute="trailing" constant="12" id="KWO-V6-yHm"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="c0q-ia-97K" secondAttribute="trailing" constant="12" id="Ksb-mT-Evc"/>
@@ -154,7 +150,7 @@
                                         <constraint firstItem="c0q-ia-97K" firstAttribute="top" secondItem="F8h-84-XNg" secondAttribute="bottom" constant="12" id="eyf-K6-RV3"/>
                                         <constraint firstItem="j8v-rh-HOB" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leadingMargin" constant="12" id="fjO-bg-Bya"/>
                                         <constraint firstItem="F8h-84-XNg" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leading" id="h5o-hK-m7O"/>
-                                        <constraint firstItem="SPD-lN-0FG" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leadingMargin" constant="5" id="i7s-js-7U0"/>
+                                        <constraint firstAttribute="trailing" secondItem="SPD-lN-0FG" secondAttribute="trailing" id="jcV-BY-nsg"/>
                                         <constraint firstAttribute="trailing" secondItem="w8C-xc-Gxd" secondAttribute="trailing" id="nTV-pz-Rt8"/>
                                         <constraint firstItem="03J-Jc-zRv" firstAttribute="trailing" secondItem="DSR-71-ibH" secondAttribute="trailingMargin" constant="12" id="o05-We-Tf2"/>
                                         <constraint firstItem="d1l-xr-jWN" firstAttribute="top" secondItem="03J-Jc-zRv" secondAttribute="bottom" constant="4" id="olJ-iH-vVF"/>
@@ -188,7 +184,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hz0-qq-Vag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="5"/>
+            <point key="canvasLocation" x="2243.5114503816794" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>

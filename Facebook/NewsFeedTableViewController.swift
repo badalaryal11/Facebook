@@ -9,33 +9,39 @@ import UIKit
 
 class NewsFeedTableViewController: UITableViewController
 {
-   
+    
     var posts: [Post]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    title = "News Feed"
+       navigationItem.title = "News Feed"
         fetchPosts()
+    }
+    @IBAction  func Like() {
+        
+        
     }
     func fetchPosts(){
         posts = Post.fetchPosts()
-       // tableView.reloadData()
+        // tableView.reloadData()
     }
 }
-    
-    extension NewsFeedTableViewController {
-        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            if let posts = posts
-            {
-                return posts.count
-            }
-            return 0
+
+extension NewsFeedTableViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let posts = posts
+        {
+            return posts.count
         }
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
-            
-            cell.post = posts![indexPath.row]
-            return cell
-        }
-        
+        return 0
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
+        
+        cell.post = posts![indexPath.row]
+        return cell
+    }
+    
+}
 

@@ -81,43 +81,52 @@
                                             </constraints>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-lN-0FG">
-                                            <rect key="frame" x="25" y="592.33333333333337" width="343" height="54.333333333333371"/>
+                                            <rect key="frame" x="25" y="592.33333333333337" width="400" height="44.333333333333371"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-S2-QdC">
-                                                    <rect key="frame" x="0.0" y="10" width="89.666666666666671" height="34.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="5" width="91" height="34.333333333333336"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="  Like">
+                                                    <buttonConfiguration key="configuration" style="plain" title="Like">
                                                         <imageReference key="image" image="hand.thumbsup" catalog="system" renderingMode="original"/>
                                                         <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="Like" destination="ALC-5P-nX5" eventType="touchUpInside" id="Yjl-7E-kQV"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2d-pa-pti">
-                                                    <rect key="frame" x="96.666666666666671" y="0.0" width="136.33333333333331" height="54.333333333333336"/>
+                                                    <rect key="frame" x="98" y="5" width="130" height="34.333333333333336"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="l30-rg-YvJ"/>
+                                                    </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="  Comment">
+                                                    <buttonConfiguration key="configuration" style="plain" title="Comment">
                                                         <imageReference key="image" image="message" catalog="system" renderingMode="template"/>
                                                         <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-Hn-A3U">
-                                                    <rect key="frame" x="240" y="0.0" width="103" height="54.333333333333336"/>
+                                                    <rect key="frame" x="235" y="5" width="165" height="34.333333333333336"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pkt-vK-01Y"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="pkt-vK-01Y"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title=" Share">
+                                                    <buttonConfiguration key="configuration" style="plain" title="Share">
                                                         <imageReference key="image" image="shuffle" catalog="system" renderingMode="template"/>
                                                         <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1yb-Hn-A3U" firstAttribute="top" secondItem="M2d-pa-pti" secondAttribute="bottom" constant="-54.333333333333336" id="2Qb-c3-mX2"/>
+                                                <constraint firstItem="M2d-pa-pti" firstAttribute="top" secondItem="SPD-lN-0FG" secondAttribute="top" constant="5" id="JpO-ZP-SV4"/>
+                                                <constraint firstAttribute="bottom" secondItem="M2d-pa-pti" secondAttribute="bottom" constant="5" id="Tol-LU-vXA"/>
+                                                <constraint firstItem="1yb-Hn-A3U" firstAttribute="leading" secondItem="M2d-pa-pti" secondAttribute="trailing" constant="7" id="Xzt-F3-7f0"/>
+                                                <constraint firstItem="M2d-pa-pti" firstAttribute="leading" secondItem="7Uj-S2-QdC" secondAttribute="trailing" constant="7" id="jwx-6j-OmB"/>
                                                 <constraint firstAttribute="width" constant="400" id="q6Y-Ld-Z6h"/>
                                             </constraints>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8C-xc-Gxd">
-                                            <rect key="frame" x="0.0" y="651.66666666666663" width="393" height="1"/>
+                                            <rect key="frame" x="0.0" y="641.66666666666663" width="393" height="1"/>
                                             <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="ouc-uN-c7W"/>
@@ -137,7 +146,6 @@
                                         <constraint firstItem="03J-Jc-zRv" firstAttribute="top" secondItem="DSR-71-ibH" secondAttribute="topMargin" constant="12" id="S06-Sg-S0W"/>
                                         <constraint firstAttribute="trailing" secondItem="F8h-84-XNg" secondAttribute="trailing" id="TC2-Bo-nK7"/>
                                         <constraint firstItem="c0q-ia-97K" firstAttribute="leading" secondItem="DSR-71-ibH" secondAttribute="leadingMargin" constant="12" id="VAG-NU-a2F"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="SPD-lN-0FG" secondAttribute="trailing" constant="5" id="WID-PK-PpA"/>
                                         <constraint firstItem="d1l-xr-jWN" firstAttribute="leading" secondItem="94P-zE-bV0" secondAttribute="trailing" constant="8" id="WnA-zi-5Ur"/>
                                         <constraint firstItem="w8C-xc-Gxd" firstAttribute="top" secondItem="SPD-lN-0FG" secondAttribute="bottom" constant="5" id="Yrs-gu-htr"/>
                                         <constraint firstItem="03J-Jc-zRv" firstAttribute="leading" secondItem="j8v-rh-HOB" secondAttribute="trailing" constant="8" id="a1n-74-T1s"/>
@@ -180,7 +188,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hz0-qq-Vag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2569" y="43"/>
+            <point key="canvasLocation" x="2244" y="5"/>
         </scene>
     </scenes>
     <resources>

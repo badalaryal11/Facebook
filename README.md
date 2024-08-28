@@ -1,5 +1,5 @@
 # Facebook
-* Description: This is a Facebook Newsfeed iOS app. 
+* Description: This is a Facebook Newsfeed iOS app works exactly same as facebook newsfeed. 
 * Technologies Used: Swift, UIKit, MVC, ScrollView
 * Features:This is a replica of Facebook Newsfeed which can also be used to scroll .
 * Contribution: Developed the user interface using UIKit, optimized backend communication with Model.
